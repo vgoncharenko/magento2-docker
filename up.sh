@@ -22,7 +22,7 @@ docker run \
         -dt \
         --volume ${mount_html_folder}:${html_folder}  --volume `pwd`:${tool_folder} \
         -w ${html_folder} \
-#        --env-file ${docker_env_file} \
+        --env-file ${docker_env_file} \
         ${docker_image}
 
 # Prepare Environment

@@ -19,6 +19,10 @@ set_docker_config () {
     set_file_name $1
     override=$2
     docker_env_file=$3
+
+    if [ ! -d $temp_dir ]; then
+        mkdir -p ${temp_dir}
+    fi
     if [ $override == 'yes' ]; then
         cat ${file_name} | sed 's/#.*$//' | sed '/^$/d' | sed 's/ //g' > ${docker_env_file}
     else
