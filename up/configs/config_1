@@ -1,0 +1,71 @@
+# Docker Settings
+docker_image=hub.corp.magento.com/mage:bb-p56                                   # Name of docker image
+
+# Magento settings
+magento_dir=magento2ce                                                          # Directory to clone Magento 2 CE
+magento_edition=EE                                                              # Specify magento edition to install. Values: CE|EE|B2B
+magento_download_type=git                                                       # Type for magento download. Values: git|composer
+magento_theme=luma                                                              # Specify default Magento Store front theme. Values: luma|blank
+magento_scalable_checkout=false                                                 # Deploy Scalable Order Management and Scalable Checkout. Values: true|false
+magento_ssl_enable=false                                                        # Flag for enable ssl. Values: true|false
+magento_sample_data=true                                                        # Whether to install Magento with sample data. Values: true|false
+magento_index_mode=realtime                                                     # Sets index mode type. Values: realtime|schedule
+magento_cache_status=enable                                                     # Sets cache status. Values: enable|disable
+magento_application_mode=production                                             # Set application mode. Values: default|developer|production
+magento_compilation=true                                                        # Generates DI configuration and all missing classes that can be auto-generated. Please, note that in production mode it runs automatically. Values: true|false
+magento_deploy_static=true                                                      # Whether to deploy Magento static. Please, note that in production mode it runs automatically. Values: true|false
+magento_multiple_websites_config=disable                                        # Multiple websites configuration type. Please, set magento_install_admin_secret_key = 0 to execute cURL requests. Values: disable|one_web_site_two_store_group_one_store_view|one_web_site_one_store_group_two_store_view
+
+# Magento installation settings
+magento_install_backend_frontname=admin                                         # Magento backend frontname
+magento_install_session_save=files                                              # Magento session save parameter. Values:files|db
+magento_install_table_prefix=-                                                  # Database table prefix
+magento_install_use_rewrites=1                                                  # Apache rewrites. Values: 0|1
+magento_install_currency=USD                                                    # Default currency code
+magento_install_timezone=UTC                                                    # Default Magento time zone. Values: UTC|GMT|America/New_York|etc.
+magento_install_language=en_US                                                  # Default Magento language. Values: en_US etc
+magento_install_port=80                                                         # Port which will be specified while Magento installation
+magento_install_admin_secret_key=1                                              # Whether to use a "security key" feature in Magento Admin URLs. Values: 0|1
+magento_install_admin_user=admin                                                # Magento admin user
+magento_install_admin_pass=123123q                                              # Magento admin password
+
+# Magento configuration settings
+magento_config_js_minification=0                                                # Minify JavaScript Files. Values: 0|1
+magento_config_js_bundling=0                                                    # Enable JavaScript Bundling. Values: 0|1
+magento_config_js_merge=0                                                       # Merge JavaScript Files. Values: 0|1
+magento_config_css_minification=0                                               # Minify CSS Files. Values: 0|1
+magento_config_css_merge=0                                                      # Merge CSS Files. Values: 0|1
+magento_config_html_minification=0                                              # Minify HTML Files. Values: 0|1
+magento_config_flat_catalog_product=0                                           # Use Flat Catalog Product. Values: 0|1
+magento_config_flat_catalog_category=0                                          # Use Flat Catalog Category. Values: 0|1
+magento_config_wysiwyg_editor=enabled                                           # Whether to Enable WYSIWYG Editor. Values: enabled|hidden|disabled
+magento_config_admin_account_sharing=0                                          # Admin Account Sharing. Values: 0|1
+
+# Varnish settings
+varnish_enabled=false                                                           # Whether to install Varnish or not. Values: true|false
+varnish_version=3.0                                                             # Varnish install version. Values: 3.0|4.0|4.1
+varnish_listen_port=80                                                          # Varnish port to listen. Dont forget to change web_server_listen_port to 8080
+
+# Solr settings
+solr_enabled=false                                                              # Whether to install Solr or not. Values: true|false
+solr_version=4.10.4                                                             # Solr version. Newer versions requires another configuration and currently not supported.
+
+# Elastic search settings
+elasticsearch_enabled=false                                                     # Whether to install Elastic search or not. Values: true|false
+
+# RabbitMQ settings
+rabbitmq_enabled=false                                                          # Whether to install RabbitMQ or not. Values: true|false
+rabbitmq_amqp_host=127.0.0.1                                                    # Should be the same as hostname
+rabbitmq_amqp_port=5672                                                         # RabbitMQ default port.
+rabbitmq_amqp_user=magento                                                      # RabbitMQ default user.
+rabbitmq_amqp_pass=magento                                                      # RabbitMQ default password.
+
+# Redis settings
+redis_enabled=false                                                             # Whether to install Redis or not. Values: true|false
+redis_as_cache_storage=false                                                    # Configure Redis as cache storage
+redis_as_session_storage=false                                                  # Configure Redis as session storage
+
+# Memcached settings
+memcached_enabled=false                                                         # Whether to install Memcached or not. Values: true|false
+memcached_as_cache_storage=false                                                # Set Memcached as cache storage for Magento. Values: true|false
+memcached_as_session_storage=false                                              # Set Memcached as session storage for Magento. Values: true|false

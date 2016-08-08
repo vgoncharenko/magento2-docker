@@ -1,0 +1,24 @@
+# CE data
+github_magento_ce_url=https://github.com/magento/magento2ce.git                               # GitHub Magento 2 CE url
+github_magento_ce_branch=develop                                                              # Magento 2 CE branch name
+github_magento_ce_dir=${html_folder}/magento2ce                                               # Directory to clone Magento 2 CE
+
+# EE data
+github_magento_ee_url=https://github.com/magento/magento2ee.git                               # GitHub Magento 2 EE url
+github_magento_ee_branch=develop                                                              # Magento 2 EE branch name
+github_magento_ee_dir=${html_folder}/magento2ee                                               # Directory to clone Magento 2 EE
+
+# B2B data
+github_magento_b2b_url=https://github.com/magento/magento2b2b.git                             # GitHub Magento 2 B2B url
+github_magento_b2b_branch=develop                                                             # Magento 2 B2B branch name
+github_magento_b2b_dir=${html_folder}/magento2b2b                                             # Directory to clone Magento 2 B2B
+
+# CE sample data
+github_magento_ce_sample_data=https://github.com/magento/magento2-sample-data.git             # GitHub Magento 2 CE sample data url
+github_magento_ce_sample_data_branch=develop                                                  # Magento 2 CE sample data branch name
+github_magento_ce_sample_data_dir=${html_folder}/sample-data-ce                               # Directory to clone Magento 2 CE sample data
+
+# EE sample data
+github_magento_ee_sample_data=https://github.com/magento/magento2-sample-data-ee.git          # GitHub Magento 2 EE sample data url
+github_magento_ee_sample_data_branch=develop                                                  # Magento 2 EE sample data branch name
+github_magento_ee_sample_data_dir=${html_folder}/sample-data-ee                               # Directory to clone Magento 2 EE sample data

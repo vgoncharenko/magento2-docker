@@ -1,0 +1,11 @@
+# Server settings
+db_host=127.0.0.1                                                                  # Database host
+db_magento_name=magento                                                            # Magento database name.
+db_magento_user=bamboo                                                             # User name to access Magento database.
+db_magento_pass=BambooAgentPWD                                                     # Password to access to Magento database.
+hostname=127.0.0.1/builds/magento2ce                                               # Virtual machine hostname
+server_group=apache                                                                # Server group
+html_folder=/opt/bamboo/builds                                                     # html directory on server
+tool_folder=/usr/bamboo/tool                                                       # html directory on server
+mount_html_folder=C:/xampp/htdocs/magento/builds                                   # folder with magento
+docker_env_file=`pwd`/temp/docker.env                                              # Docker environment file
