@@ -8,6 +8,9 @@ eval $(sh `pwd`/lib/variable.sh export_config `pwd`/up/magento-clone/credentials
 eval $(sh `pwd`/lib/variable.sh export_config `pwd`/up/magento-clone/config)
 
 # clone magento
+if [ ! -d $html_folder ]; then
+    mkdir -p ${html_folder}
+fi
 cd $html_folder
 if [ $magento_download_type == "composer" ]; then
     if [ $magento_edition == "CE" ]; then

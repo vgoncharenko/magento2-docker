@@ -7,6 +7,6 @@ hostname=127.0.0.1/builds/magento2ce                                            
 server_group=apache                                                                # Server group
 html_folder=/opt/bamboo/builds                                                     # html directory on server
 tool_folder=/usr/bamboo/tool                                                       # html directory on server
-mount_html_folder=C:/xampp/htdocs/magento/builds                                   # folder with magento
+mount_html_folder=`pwd`/../builds                                                  # folder with magento
 temp_dir=`pwd`/temp                                                                # Temp dir
 docker_env_file=`pwd`/temp/docker.env                                              # Docker environment file
