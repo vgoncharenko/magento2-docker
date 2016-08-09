@@ -11,8 +11,8 @@ magento_ssl_enable=false                                                        
 magento_sample_data=true                                                        # Whether to install Magento with sample data. Values: true|false
 magento_index_mode=realtime                                                     # Sets index mode type. Values: realtime|schedule
 magento_cache_status=enable                                                     # Sets cache status. Values: enable|disable
-magento_application_mode=production                                             # Set application mode. Values: default|developer|production
-magento_compilation=true                                                        # Generates DI configuration and all missing classes that can be auto-generated. Please, note that in production mode it runs automatically. Values: true|false
+magento_application_mode=default                                                # Set application mode. Values: default|developer|production
+magento_compilation=false                                                       # Generates DI configuration and all missing classes that can be auto-generated. Please, note that in production mode it runs automatically. Values: true|false
 magento_deploy_static=true                                                      # Whether to deploy Magento static. Please, note that in production mode it runs automatically. Values: true|false
 magento_multiple_websites_config=disable                                        # Multiple websites configuration type. Please, set magento_install_admin_secret_key = 0 to execute cURL requests. Values: disable|one_web_site_two_store_group_one_store_view|one_web_site_one_store_group_two_store_view
 

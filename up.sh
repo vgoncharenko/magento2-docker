@@ -10,7 +10,7 @@ sh `pwd`/lib/variable.sh set_docker_config `pwd`/up/config yes $docker_env_file
 eval $(sh `pwd`/lib/variable.sh export_config `pwd`/up/configs/config_${1})
 
 # Prepare Docker env-file by custom config variables
-sh `pwd`/lib/variable.sh set_docker_config `pwd`/up/configs/config_${1} yes $docker_env_file
+sh `pwd`/lib/variable.sh set_docker_config `pwd`/up/configs/config_${1} no $docker_env_file
 
 # Clone Magento
 sh `pwd`/up/magento-clone.sh $mount_html_folder

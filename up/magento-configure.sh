@@ -55,7 +55,7 @@ if [ $magento_application_mode != 'default' ]; then
     echo 'done'
 fi
 
-if [ $magento_deploy_static != 'true' ] && [ $magento_application_mode != 'production' ]; then
+if [ $magento_deploy_static == 'true' ] && [ $magento_application_mode != 'production' ]; then
     # Compiling static content
     echo Compiling static content
     if [ $magento_install_language == 'en_US' ]; then
@@ -66,7 +66,7 @@ if [ $magento_deploy_static != 'true' ] && [ $magento_application_mode != 'produ
     echo 'done'
 fi
 
-if [ $magento_compilation != 'true' ] && [ $magento_application_mode != 'production' ]; then
+if [ $magento_compilation == 'true' ] && [ $magento_application_mode != 'production' ]; then
     # Run compilation command
     echo Run compilation command
     php -f bin/magento setup:di:compile
